@@ -1,77 +1,158 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
 
 body {
-    font-family: "Noto Sans KR", sans-serif;
-    color: #1d2e36;
-    font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #1d2e36;
+  font-size: 16px;
 }
 
 .container{
-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background-color: #e1e8ec;
-
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1e8ec;
 }
 
 .login_wrapper {
-    width: 800px;
-    height: 600px;
-    background-color: white;
-    display: flex;
+  width: 800px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2)
+}
+
+.contents {
+  width: 480px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 107px 80px 107px;
+  box-sizing: border-box;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.photo {
+  width: 320px;
+  height: 600px;
+  border-top-right-radius: 20px; 
+  border-bottom-right-radius:20px;
+}
+
+.top {
+  /* display: flex; */
+  /* flex-direction: column; */
+  text-align: center;
+}
+
+.top h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f28283;
+}
+
+.top .social {
+  display: flex; 
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 26px;
+  gap: 24px;
+}
+
+.top .social a {
+  border: 1px solid #1d2e36;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 0.3s;
+}
+
+.top .social a:hover {
+  background-color: #1a2e35;
+  color: #fff;
+}
+
+.top p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* form */
+.form_area form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_area .agree {
+  font-size: 12px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.agree a {
+  color: #fd5353;
+}
+
+::placeholder {
+  color: #d0d9da;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.agree label {
+  display: flex;
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.btn_fill {
+  background-color: #fd5353;
+  color: #fff;
+  width: 120px;
+}
+
+.btn_line {
+  background-color: #fff;
+  color: #fd5353;
+  width: 120px;
 }
 
 
 
-    .contents {
-        width: 480px;
-        height: 600px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        padding: 70px 107px 80px 107px;
-        box-sizing: border-box;
-      }
+.form_area input[type="text"],
+.form_area input[type="password"] {
+  height: 50px;
+  margin-bottom: 16px;
+  padding: 0 16px;
+  border-radius: 6px;
+  border: 1px solid #c6d9df;
+  background-color: #f7f8f9;
+}
 
-      .photo {
-        width: 320px;
-        height: 600px;
-      }
 
-      .top {
-        /* display: flex; */
-        /* flex-direction: column; */
-        text-align: center;
-      }
 
-      .top h2 {
-        font-size: 36px;
-        font-weight: 700;
-        color: #f28283;
-      }
 
-      .top .social {
-        display: flex; 
-        justify-content: center;
-        margin-top: 36px;
-        margin-bottom: 26px;
-        gap: 24px;
-      }
 
-      .top .social a {
-        border: 1px solid #1d2e36;
-        border-radius: 50%;
-        padding: 5px;
-      }
 
-      /* form */
-.form_area form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form_area .agree {
-    font-size: 12px;
-  }
+
+/* photo */
+.photo {
+  background: url(../image/bg.jpg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
